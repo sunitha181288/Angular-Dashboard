@@ -64,6 +64,7 @@ export class SecuritiesComponent implements OnInit, OnDestroy {
    * This method is used to fetch securities
    */
   private fetchSecurities(): void {
+    debugger;
     this.httpService.fetchSecurities(this.start, this.pageSize, this.sortBy, this.orderBy)
       .subscribe((result) => {
         this.securitiesData = result;

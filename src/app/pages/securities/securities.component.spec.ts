@@ -25,9 +25,7 @@ describe('SecuritiesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+
 
   it('should render securities-data-table', () => {
     const compiled = fixture.nativeElement;
@@ -38,4 +36,6 @@ describe('SecuritiesComponent', () => {
     tick(5000);
     expect(component.securitiesData.length >= 0).toBeTruthy();
   }));
+
+ 
 });

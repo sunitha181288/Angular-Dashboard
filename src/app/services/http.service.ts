@@ -16,6 +16,8 @@ export class HttpService {
    */
   public fetchSecurities(start: number, limit: number,
     sort: string, order: string): Observable<Array<SecuritiesModel>> {
+      debugger;
+
     let requestUrl = `${environment.API_ENDPOINT}?_start=${start}&_limit=${limit}`;
     if (sort && order) {
       requestUrl += `&_sort=${TYPES[sort]}&_order=${order.toUpperCase()}`;
